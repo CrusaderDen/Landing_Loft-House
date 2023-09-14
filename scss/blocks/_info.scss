@@ -1,0 +1,34 @@
+.info {
+  font-size: 18px;
+  position: relative;
+
+  &--map,
+  &--tel {
+    padding-left: 35px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0px;
+      width: 21px;
+      height: 21px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--map::before {
+    background-image: url(./../img/Header/map.svg);
+    @include mediaTablet {
+      top: -2px;
+    }
+  }
+
+  &--tel::before {
+    background-image: url(./../img/Header/phone.svg);
+  }
+  @include mediaTablet {
+    font-size: 14px;
+  }
+}
