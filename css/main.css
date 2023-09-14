@@ -183,7 +183,7 @@ a:hover {
       rgba(45, 52, 60, 0.38) 51.04%,
       #242b33 92.19%
     ),
-    url("../img/header/headerbg.jpg") center no-repeat;
+    url("../img/Header/headerbg.jpg") center no-repeat;
 }
 @media screen and (max-width: 959px) {
   .header {
