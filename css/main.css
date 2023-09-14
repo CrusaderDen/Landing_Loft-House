@@ -80,7 +80,7 @@ input::-ms-clear {
 }
 
 button,
-input[type=submit] {
+input[type="submit"] {
   display: inline-block;
   box-shadow: none;
   background-color: transparent;
@@ -177,7 +177,13 @@ a:hover {
   padding-top: 30px;
   padding-bottom: 74px;
   min-height: 840px;
-  background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("./../img/header/headerbg.jpg") center no-repeat;
+  background: linear-gradient(
+      180deg,
+      #242b33 11.98%,
+      rgba(45, 52, 60, 0.38) 51.04%,
+      #242b33 92.19%
+    ),
+    url("../img/header/headerbg.jpg") center no-repeat;
 }
 @media screen and (max-width: 959px) {
   .header {
@@ -246,7 +252,7 @@ a:hover {
 .nav ul {
   display: flex;
   -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
   align-items: center;
 }
 
@@ -353,10 +359,12 @@ a:hover {
   font-size: 18px;
   position: relative;
 }
-.info--map, .info--tel {
+.info--map,
+.info--tel {
   padding-left: 35px;
 }
-.info--map::before, .info--tel::before {
+.info--map::before,
+.info--tel::before {
   content: "";
   position: absolute;
   left: 0;
@@ -367,7 +375,7 @@ a:hover {
   background-position: center;
 }
 .info--map::before {
-  background-image: url(./../img/Header/map.svg);
+  background-image: url(../img/Header/map.svg);
 }
 @media screen and (max-width: 959px) {
   .info--map::before {
@@ -375,7 +383,7 @@ a:hover {
   }
 }
 .info--tel::before {
-  background-image: url(./../img/Header/phone.svg);
+  background-image: url(../img/Header/phone.svg);
 }
 @media screen and (max-width: 959px) {
   .info {
@@ -413,7 +421,7 @@ a:hover {
 .benefits__row {
   display: flex;
   -moz-column-gap: 70px;
-       column-gap: 70px;
+  column-gap: 70px;
 }
 @media screen and (max-width: 959px) {
   .benefits__row {
@@ -551,7 +559,14 @@ a:hover {
 
 .cta {
   padding: 180px 0;
-  background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("./../img/Cta/cta-bg.jpg") center no-repeat;
+  background: linear-gradient(
+      180deg,
+      #242b33 10.42%,
+      rgba(36, 43, 51, 0) 50.52%,
+      #242b33 90.1%
+    ),
+    linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
+    url("../img/Cta/cta-bg.jpg") center no-repeat;
 }
 @media screen and (max-width: 959px) {
   .cta {
@@ -742,47 +757,47 @@ a:hover {
   background: #626262;
 }
 
-[class*=copyright__link] {
+[class*="copyright__link"] {
   /* display: none !important; */
   opacity: 0;
   transition: opacity 0.2s ease-in;
 }
 
-.map:hover [class*=copyright__link] {
+.map:hover [class*="copyright__link"] {
   opacity: 1;
 }
 
 /* Создать свою карту */
-[class*=gototech] {
+[class*="gototech"] {
   display: none !important;
 }
 
-[class*=ground-pane] {
+[class*="ground-pane"] {
   filter: grayscale(1) sepia(10%);
 }
 
 /* Baloon */
-[class*=balloon__layout],
-[class*=balloon__content] {
+[class*="balloon__layout"],
+[class*="balloon__content"] {
   background-color: #242b33 !important;
   color: #fff !important;
 }
 
-[class*=balloon__tail]::after {
+[class*="balloon__tail"]::after {
   background-color: #242b33 !important;
 }
 
-[class*=balloon_layout_panel] {
+[class*="balloon_layout_panel"] {
   background-color: #242b33 !important;
 }
 
-[class*=balloon__layout],
-[class*=balloon__content] a {
+[class*="balloon__layout"],
+[class*="balloon__content"] a {
   color: #d4c17f !important;
 }
 
-[class*=balloon__close-button] {
-  background: url("./../img/map/cross.svg") 50% no-repeat !important;
+[class*="balloon__close-button"] {
+  background: url("../img/map/cross.svg") 50% no-repeat !important;
   width: 15px !important;
   height: 15px !important;
   margin: 10px 7px;
@@ -868,6 +883,6 @@ a:hover {
 .footer__socials {
   display: flex;
   -moz-column-gap: 22px;
-       column-gap: 22px;
+  column-gap: 22px;
   align-items: center;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
